@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 p-2">
+            <button type="button" class="btn btn-dark btn-lg btn-block">GRAPH</button>
+            <div class="list-group">
+              <a href="second.html" class="list-group-item list-group-item-action">state</a>
+              <a href="second.html" class="list-group-item list-group-item-action">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">_state_</li>
+                  <li class="list-group-item">Login
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">actions</li>
+                      <li class="list-group-item">channels</li>
+                      <li class="list-group-item">effects</li>
+                      <li class="list-group-item">reducers</li>
+                      <li class="list-group-item">types.js</li>
+                    </ul>
+                  </li>
+                  <li class="list-group-item">initialState.js</li>
+                  <li class="list-group-item">store.js</li>
+                  <li class="list-group-item">types.js</li>
+                </ul>
+              </a>
+              <a href="second.html" class="list-group-item list-group-item-action">View</a>
+              <a href="second.html" class="list-group-item list-group-item-action">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">LoginBox.js</li>
+                </ul>
+              </a>
+              <a href="second.html" class="list-group-item list-group-item-action">App.js</a>
+              <a href="second.html" class="list-group-item list-group-item-action">index.js</a>
+            </div>
+        </div>
+        <div class="col-10 p-2">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <p style="text-align: right;">1</p>            
+                <h5 class="card-title" style="text-align: right;">State</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <p style="text-align: right;">5</p>
+                <h5 class="card-title" style="text-align: right;">Action</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <p style="text-align: right;">3</p>
+                <h5 class="card-title" style="text-align: right;">Effect</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <p style="text-align: right;">3</p>
+                <h5 class="card-title" style="text-align: right;">Component</h5>
+              </div>
+            </div>
+          </div>
+          <button id="control-flow" type="button" class="btn btn-dark mt-3">Control flow</button>
+          <button id="parent-child" type="button" class="btn btn-dark mt-3 ml-2">Parent / Chlid</button>
+          <div style="margin-top: 10px;">
+            <img id="graph" style="width:100%; height:100%; object-fit: contain" src="control_flow.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var btnControlFLow = document.getElementById("control-flow")
+    var btnParentChild = document.getElementById("parent-child")
+    var graph = document.getElementById("graph")
+
+    btnControlFLow.addEventListener('click', () => {
+      graph.src = "control_flow.jpg"
+    })
+
+    btnParentChild.addEventListener('click', () => {
+      graph.src = "parent-child.jpg"
+    })
+  </script>
+</html>
